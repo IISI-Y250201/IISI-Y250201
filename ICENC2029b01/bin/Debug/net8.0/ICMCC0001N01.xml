@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ICMCC0001N01</name>
+    </assembly>
+    <members>
+        <member name="T:ICMCC0001N01.ICMM_GetDrugDeviceInfo">
+            <summary>
+            取得藥物以及特材相關資訊
+            </summary>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_IsPayPrecheck(System.String,System.DateTime)">
+            <summary>
+            支付標準是否需事前審查
+            </summary>
+            <param name="drugNo">醫令代碼</param>
+            <param name="checkDate">檢查日期</param>
+            <returns>true:需要事前檢查, false:不需事前檢查</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_IsPayPrecheck(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.DateTime)">
+            <summary>
+            支付標準是否需事前審查
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="drugNo">醫令代碼</param>
+            <param name="checkDate">檢查日期</param>
+            <returns>true:需要事前檢查, false:不需事前檢查</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_IsMetPrecheck(System.String,System.DateTime)">
+            <summary>
+            檢查特材是否需要事前檢查
+            </summary>
+            <param name="code">藥材代碼</param>
+            <param name="checkDate">檢查日期</param>
+            <returns>true:需要事前檢查, false:不需事前檢查</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_IsMetPrecheck(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.DateTime)">
+            <summary>
+            檢查特材是否需要事前檢查
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="code">藥材代碼</param>
+            <param name="checkDate">檢查日期</param>
+            <returns>true:需要事前檢查, false:不需事前檢查</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetDrugName(System.String)">
+            <summary>
+            取得藥品名稱
+            </summary>
+            <param name="drugCode">藥品編號</param>
+            <returns>藥品名稱(MHDT_DRUG.DRUG_CNAME), 若為string.Empty代表找不到藥品名稱</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetDrugName(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String)">
+            <summary>
+            取得藥品名稱
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="drugCode">藥品編號</param>
+            <returns>藥品名稱(MHDT_DRUG.DRUG_CNAME), 若為string.Empty代表找不到藥品名稱</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetSpecName(System.String)">
+            <summary>
+            取得特材名稱
+            </summary>
+            <param name="metCode">特材代碼</param>
+            <returns>特材名稱(MHDT_MET_MST.SPEC_NAME), 若為string.Empty代表找不到特材名稱</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetSpecName(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String)">
+            <summary>
+            取得特材名稱
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="metCode">特材代碼</param>
+            <returns>特材名稱(MHDT_MET_MST.SPEC_NAME), 若為string.Empty代表找不到特材名稱</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetMetPayPrice(System.String,System.DateTime)">
+            <summary>
+            取得特材單價(若回傳-1代表找無資料)
+            </summary>
+            <param name="metCode">特材代碼</param>
+            <param name="checkSDate">日期起始日</param>
+            <returns>取得特材單價(MHDT_MET_PAY_PRICE.PAY_PRICE), 若為 -1 y代表找不到特材單價</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetMetPayPrice(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.DateTime)">
+            <summary>
+            取得特材單價(若回傳-1代表找無資料)
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="metCode">特材代碼</param>
+            <param name="checkSDate">日期起始日</param>
+            <returns>取得特材單價(MHDT_MET_PAY_PRICE.PAY_PRICE), 若為 -1 y代表找不到特材單價</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetDrugPrice(System.String,System.DateTime)">
+            <summary>
+            取得藥品單價(若回傳-1代表找無資料)
+            </summary>
+            <param name="drugCode">藥品代碼</param>
+            <param name="checkSDate">日期起始日</param>
+            <returns>取得藥品單價(MHDT_DRPAY.PAY_PRICE), 若為 -1 y代表找不到藥品單價，原始名稱:PXX_get_drug_price</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetDrugDeviceInfo.ICMM_GetDrugPrice(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.DateTime)">
+            <summary>
+            取得藥品單價(若回傳-1代表找無資料)
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="drugCode">藥品代碼</param>
+            <param name="checkSDate">日期起始日</param>
+            <returns>取得藥品單價(MHDT_DRPAY.PAY_PRICE), 若為 -1 y代表找不到藥品單價</returns>
+        </member>
+        <member name="T:ICMCC0001N01.HospInfo">
+            <summary>
+            醫事機構 共用Class
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospInfo.HospAbbr">
+            <summary>
+            醫事機構簡稱
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospInfo.HospName">
+            <summary>
+            醫事機構全稱
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospInfo.HospCntType">
+            <summary>
+            醫院層級別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospInfo.HospAddr">
+            <summary>
+            醫事機構地址
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospInfo.Tel">
+            <summary>
+            電話號碼
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospInfo.Email">
+            <summary>
+            電子郵件一
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospInfo.Email2">
+            <summary>
+            電子郵件二
+            </summary>
+        </member>
+        <member name="T:ICMCC0001N01.IssueNoInformation">
+            <summary>
+            發文文號資訊
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.IssueNoInformation.address">
+            <summary>
+            發文文號住址
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.IssueNoInformation.tel">
+            <summary>
+            發文文號電話
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.IssueNoInformation.fax">
+            <summary>
+            發文傳真
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.IssueNoInformation.zipCode">
+            <summary>
+            發文郵遞區號
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.IssueNoInformation.managerName">
+            <summary>
+            發文經理姓名
+            </summary>
+        </member>
+        <member name="T:ICMCC0001N01.HospAttributes">
+            <summary>
+            醫事機構之 特約類別 教學成本註記 型態別 型態組別 評鑑等級
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospAttributes.hospContType">
+            <summary>
+            特約類別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospAttributes.eduMark">
+            <summary>
+            教學成本
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospAttributes.hospType">
+            <summary>
+            型態別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospAttributes.hospGType">
+            <summary>
+            型態主別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HospAttributes.gradCode">
+            <summary>
+            評鑑等級
+            </summary>
+        </member>
+        <member name="T:ICMCC0001N01.HandlerUser">
+            <summary>
+            費用涵經辦人員資料-個人
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HandlerUser.oipdType">
+            <summary>
+            門住診別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HandlerUser.deptType">
+            <summary>
+            課別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HandlerUser.userName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HandlerUser.userPTel">
+            <summary>
+            分機號碼
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.HandlerUser.gpType">
+            <summary>
+            醫療費用組別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PbdbUser.oipdType">
+            <summary>
+            門住診別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PbdbUser.deptType">
+            <summary>
+            課別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PbdbUser.userId">
+            <summary>
+            使用者ID
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PbdbUser.userName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PbdbUser.userPTel">
+            <summary>
+            分機號碼
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PbdbUser.branchCode">
+            <summary>
+            分區別
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PbdbUser.gpType">
+            <summary>
+            醫療費用組別
+            </summary>
+        </member>
+        <member name="T:ICMCC0001N01.ICMM_GetHospInfoLib">
+            <summary>
+            取得醫院相關資訊
+            </summary>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetCommSeqNo(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String)">
+            <summary>
+            產生序號
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="branchCode">分區別</param>
+            <param name="subSys">系統別</param>
+            <param name="seqNoTypePxx">序號類別</param>
+            <returns>1130522  mark BeginTransaction</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHandlerByCase(System.String,System.String,System.DateTime)">
+            <summary>
+            取得費用涵經辦人員資料 - 醫療費用
+            </summary>
+            <param name="hospId">醫事機構代碼</param>
+            <param name="hospDataType">輸入之醫事類別</param>
+            <param name="feeYm">費用年月</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_IsHospContractValid(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.DateTime)">
+            <summary>
+            檢查醫事機構合約是否到期
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospId">醫事機構代碼</param>
+            <param name="feeYM">費用年月</param>
+            <returns>0-成功 200-失敗</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHandlerByCase(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.DateTime)">
+            <summary>
+            取得費用涵經辦人員資料 - 醫療費用
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospId">醫事機構代碼</param>
+            <param name="hospDataType">輸入之醫事類別</param>
+            <param name="feeYm">費用年月</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospTypeName(System.String,System.String)">
+            <summary>
+            將醫事類別代碼轉換為醫事類別名稱
+            </summary>
+            <param name="hospDataType">醫事類別代碼</param>
+            <param name="applType">申報類別</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospTypeName(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String)">
+            <summary>
+            將醫事類別代碼轉換為醫事類別名稱
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospDataType">醫事類別代碼</param>
+            <param name="applType">申報類別</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHandlerById(System.String)">
+            <summary>
+            取得費用涵經辦人員資料-個人
+            </summary>
+            <param name="userId">輸入使用者ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHandlerById(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String)">
+            <summary>
+            取得費用涵經辦人員資料-個人
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="userId">輸入使用者ID</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospAttributes(System.String,System.DateTime)" -->
+        <!-- Badly formed XML comment ignored for member "M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospAttributes(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.DateTime)" -->
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospDataType(System.String)">
+            <summary>
+            取得醫事類別(hosp_data_type)
+            </summary>
+            <param name="hospId">醫事機構代號</param>
+            <returns>取得醫事類別(hosp_data_type)</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospExmType(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.DateTime,System.String@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@)">
+            <summary>
+            取得院所審查管理類別　與　減量抽審樣本月資料
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospId">醫事機構代號</param>
+            <param name="hospDataType">醫事類別</param>
+            <param name="feeYm">費用年月</param>
+            <param name="hospExmType">院所審查類別</param>
+            <param name="feeStrYm">費用年月起</param>
+            <param name="feeEndYm">費用年月迄</param>
+            <param name="spMonth">減量抽審樣本月</param>
+            <param name="spSmonth">減量抽審樣本季起</param>
+            <param name="spEmonth">減量抽審樣本季迄</param>
+            <returns>
+            0    成功
+            200  未取得院所管理類別 與 減量抽審樣本月
+            300  未取得減量抽審樣本月
+            </returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospExmType2(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.DateTime,System.String@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@)">
+            <summary>
+            取得院所審查管理類別　與　減量抽審樣本月資料
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospId">醫事機構代號</param>
+            <param name="hospDataType">醫事類別</param>
+            <param name="applType">申報類別</param>
+            <param name="feeYm">費用年月</param>
+            <param name="hospExmType">院所審查類別</param>
+            <param name="feeStrYm">費用年月起</param>
+            <param name="feeEndYm">費用年月迄</param>
+            <param name="spMonth">減量抽審樣本月</param>
+            <param name="spSmonth">減量抽審樣本季起</param>
+            <param name="spEmonth">減量抽審樣本季迄</param>
+            <returns>
+            0    成功
+            200  未取得院所管理類別 與 減量抽審樣本月
+            300  未取得減量抽審樣本月
+            </returns>
+            <remarks>
+            在總局，一律 return 200
+            </remarks>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospExmType3(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.DateTime,System.DateTime,System.String@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@,System.Nullable{System.DateTime}@)">
+            <summary>
+            取得院所審查管理類別　與　減量抽審樣本月資料
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospId">醫事機構代號</param>
+            <param name="hospDataType">醫事類別</param>
+            <param name="applType">申報類別</param>
+            <param name="applDate">申請/申報日期</param>
+            <param name="feeYm">費用年月</param>
+            <param name="hospExmType">院所審查類別</param>
+            <param name="feeStrYm">費用年月起</param>
+            <param name="feeEndYm">費用年月迄</param>
+            <param name="spMonth">減量抽審樣本月</param>
+            <param name="spSmonth">減量抽審樣本季起</param>
+            <param name="spEmonth">減量抽審樣本季迄</param>
+            <returns>
+            0    成功
+            200  未取得院所管理類別 與 減量抽審樣本月
+            300  未取得減量抽審樣本月
+            </returns>
+            <remarks>
+            在總局，一律 return 200
+            </remarks>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospInfo(System.String,System.Collections.Generic.Dictionary{System.String,System.String}@)">
+            <summary>
+            取得機構簡稱, 機構名稱, 特約類別, 機構地址, 電話號碼, 電子郵件一 ,電子郵件二
+            </summary>
+            <param name="hospId">醫事機構代號</param>
+            <param name="icmiHospInfo">醫事機構訊息</param>
+            <returns>0:正常 1403:查無資料</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospInfo(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.Collections.Generic.Dictionary{System.String,System.String}@)">
+            <summary>
+            取得機構簡稱, 機構名稱, 特約類別, 機構地址, 電話號碼, 電子郵件一 ,電子郵件二
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospId">醫事機構代號</param>
+            <param name="icmiHospInfo">醫事機構訊息</param>
+            <returns>0:正常 1403:查無資料</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospInfo(System.String)">
+            <summary>
+            取得機構簡稱, 機構名稱, 特約類別, 機構地址, 電話號碼, 電子郵件一 ,電子郵件二
+            </summary>
+            <param name="hospId"></param>
+            <returns>若找無資料回傳 null </returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospInfo(System.String,Oracle.ManagedDataAccess.Client.OracleConnection@)">
+            <summary>
+            取得機構簡稱, 機構名稱, 特約類別, 機構地址, 電話號碼, 電子郵件一 ,電子郵件二
+            </summary>
+            <param name="hospId"></param>
+            <param name="OraConn">外部輸入的OracleConnection</param>
+            <returns>若找無資料或傳入null 的 OracleConnection, 則回傳 null </returns>
+            <remarks>由於多形無法使用相同函數位置, 若沒傳入OracleConnection則回傳null</remarks>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospInfo(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String)">
+            <summary>
+            取得機構簡稱, 機構名稱, 特約類別, 機構地址, 電話號碼, 電子郵件一 ,電子郵件二
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="hospId"> 醫事機構代碼</param>
+            <returns>若為NULL則代表找無此醫事機構代號相關資料</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_IssueNo(System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            產生發文文號 回傳 0 為正常結束
+            </summary>
+            <param name="branchCode">分區別</param>
+            <param name="subSys">系統別</param>
+            <param name="oipdType">門住診別</param>
+            <param name="issueNoType">發文文號類別</param>
+            <param name="issueWord">發文字</param>
+            <param name="issueNo">發文文號</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetIssueInfo(System.String,System.String,System.String,System.String)">
+            <summary>
+            取得發文文號住址,電話,傳真,郵遞區號, 經理姓名
+            </summary>
+            <param name="branchCode">分局別</param>
+            <param name="subSys">系統別</param>
+            <param name="opidType">門住診別</param>
+            <param name="issueNoType">發文文號類別</param>
+            <returns>0:正常 1403:沒有資料</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetIssueInfo(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.String)">
+            <summary>
+            取得發文文號住址,電話,傳真,郵遞區號, 經理姓名
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="branchCode">分局別</param>
+            <param name="subSys">系統別</param>
+            <param name="opidType">門住診別</param>
+            <param name="issueNoType">發文文號類別</param>
+            <returns>0:正常 1403:沒有資料</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetPaymentName(System.String)">
+            <summary>
+            取得支付標準名稱
+            </summary>
+            <param name="approveUndefCode">醫令代碼</param>
+            <returns>取得支付標準名稱(MHCT_PAYMENT.CURE_CNAME) 找不到為 string.Empty</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetPaymentName(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String)">
+            <summary>
+            取得支付標準名稱
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="approveUndefCode">醫令代碼</param>
+            <returns>取得支付標準名稱(MHCT_PAYMENT.CURE_CNAME) 找不到為 string.Empty</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetPrsnName(System.String)">
+            <summary>
+            取得醫事人員姓名
+            </summary>
+            <param name="prsnId">醫事人員身分證號</param>
+            <returns>取得醫事人員姓名(MHAT_PERSON.PRSN_NAME) 找不到為 string.Empty</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetPrsnName(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String)">
+            <summary>
+            取得醫事人員姓名
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="prsnId">醫事人員身分證號</param>
+            <returns>取得醫事人員姓名(MHAT_PERSON.PRSN_NAME) 找不到為 string.Empty</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.GetDBLINK(System.String)">
+            <summary>
+            取得DBLINK名稱
+            </summary>
+            <param name="branchCode">分區別</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetHospZip(System.String,System.String@)">
+            <summary>
+            取得院所郵遞區號
+            </summary>
+            <param name="hospId"></param>
+            <param name="zipCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetPayEDate(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.DateTime,System.String,System.DateTime,System.DateTime,System.DateTime@)">
+            <summary> 
+            計算醫事機構醫療費用核付之付款截止日期資料
+            </summary>
+            <param name="hospId">醫事機構代號</param>
+            <param name="hospDataType">醫事類別</param>
+            <param name="feeYm">費用年月</param>
+            <param name="applType">申報類別</param>
+            <param name="applDate">申報日期</param>
+            <param name="acptDate">受理日期</param>
+            <param name="payEDate">付款截止日期</param>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetHospInfoLib.ICMM_GetFluRate(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.DateTime,System.String,System.DateTime,System.Decimal@,System.Decimal@)">
+            <summary> 
+            醫事機構申請點數之浮動點數,非浮動點數,浮動比率(9.9999)資料
+            </summary>
+            <param name="hospId">醫事機構代號</param>
+            <param name="hospDataType">醫事類別</param>
+            <param name="feeYm">費用年月</param>
+            <param name="applType">申報類別</param>
+            <param name="applDate">申報日期</param>
+            <param name="fluRate">醫療費用申報之總額內浮動比率</param>
+            <param name="nfluRate">醫療費用申報之總額內非浮動比率</param>
+        </member>
+        <member name="T:ICMCC0001N01.ICMM_GetInfoLib">
+            <summary>
+            ICMM_GetInfoLib(ICMM_getinfo_lib.pc)
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetRefCode(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@)" -->
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeCName(System.String,System.String,System.String,System.String)">
+            <summary>
+            取得PXXT_CODE代碼表中的CNAME代碼說明(單筆)
+            </summary>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="branchCode">分區別 預設0</param>
+            <return>string.Empty代表找不到</return>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeEName(System.String,System.String,System.String,System.String)">
+            <summary>
+            取得PXXT_CODE代碼表中的ENAME代碼說明(單筆)
+            </summary>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="branchCode">分區別 預設0</param>
+                    /// <return>string.Empty代表找不到</return>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeDesc(System.String,System.String,System.String,System.String@,System.String@,System.String)">
+            <summary>
+            取得PXXT_CODE代碼表中的代碼說明(單筆)
+            </summary>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="codeCname">代碼說明一</param>
+            <param name="codeEname">代碼說明二</param>
+            <param name="branchCode">分區別 預設0</param>
+            <remarks>若有多筆僅回傳單筆</remarks>
+            <returns>True:codeCname, codeEname有值 </returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeDesc(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.String@,System.String@,System.String)">
+            <summary>
+            取得PXXT_CODE代碼表中的代碼說明(單筆)
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="codeCname">代碼說明一</param>
+            <param name="codeEname">代碼說明二</param>
+            <param name="branchCode">分區別 預設0</param>
+            <remarks>取得單筆</remarks>
+            <returns>True:則codeDesc1, codeDesc2有值 </returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeDesc(System.String,System.String,System.String,System.String)">
+            <summary>
+            取得PXXT_CODE代碼表中的代碼說明(多筆)
+            </summary>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="branchCode">分區別 預設 0</param>
+            <remarks>回傳完整PXXT_CODE所有欄位及所有資料</remarks>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeDesc(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.String)">
+            <summary>
+            取得PXXT_CODE代碼表中的代碼說明(多筆)
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="branchCode">分區別 預設 0</param>
+            <remarks>回傳完整PXXT_CODE所有欄位及所有資料</remarks>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeDesc2(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String)">
+            <summary>
+            取得PXXT_CODE代碼表中的代碼說明(多筆) - 不考慮失效，暫時只有REA用
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼</param>
+            <remarks>回傳完整PXXT_CODE所有欄位及所有資料</remarks>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.GetDBLINK(System.String)">
+            <summary>
+            取得DBLINK名稱
+            </summary>
+            <param name="branchCode">分區別</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ReadJsonToDatatable(System.String)">
+            <summary>
+            將JSON字串轉換為DataTable
+            </summary>
+            <param name="jsonData">輸入之JSON字串或檔案絕對路徑</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetIcd10Desc(System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            ICMM_GetIcd10Desc 取得疾病代碼檔(RDDT_XICD) 中的代碼說明
+            </summary>
+            <param name="icdOpType">診斷手術別(1:診斷碼 2:處置碼)</param>
+            <param name="icdCode">疾病代碼</param>
+            <param name="checkDate">檢核日期(YYYYMMDD)</param>
+            <param name="chName">中文名稱</param>
+            <param name="engName">英文名稱</param>
+            <returns>0 :成功 99:checkDate為空值或者不滿八位 101:日期檢核有問題 200:查無 RDDT_XICD 資料 </returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetIcd10Desc(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+             ICMM_GetIcd10Desc 取得疾病代碼檔(RDDT_XICD) 中的代碼說明
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="icdOpType">診斷手術別(1:診斷碼 2:處置碼)</param>
+            <param name="icdCode">疾病代碼</param>
+            <param name="checkDate">檢核日期(YYYYMMDD)</param>
+            <param name="chName">中文名稱</param>
+            <param name="engName">英文名稱</param>
+            <returns>0 :成功 99:checkDate為空值或者不滿八位 101:日期檢核有問題 200:查無 RDDT_XICD 資料 </returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeDescIcd(System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            取得 ICD 代碼表中的代碼說明
+            </summary>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="checkDate">檢核日期</param>
+            <param name="chName">中文名稱</param>
+            <param name="engName">英文名稱</param>
+            <returns></returns>
+            <remark>若讀取資料庫發生意外或錯誤, code_desc1, code_desc2將維持原有內容。</remark>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetInfoLib.ICMM_GetCodeDescIcd(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+            <summary>
+            取得 ICD 代碼表中的代碼說明
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="subSys">系統別</param>
+            <param name="dataType">資料類別</param>
+            <param name="code">代碼(選填)</param>
+            <param name="checkDate">檢核日期</param>
+            <param name="chName">中文名稱</param>
+            <param name="engName">英文名稱</param>
+            <returns></returns>
+            <remark>若讀取資料庫發生意外或錯誤, code_desc1, code_desc2將維持原有內容。</remark>
+        </member>
+        <member name="T:ICMCC0001N01.PhgGetAsdata">
+            <summary>
+            醫事機構 共用Class
+            </summary>
+        </member>
+        <member name="M:ICMCC0001N01.PhgGetAsdata.#ctor">
+            <summary>PhgGetAsdata建構子</summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.id">
+            <summary>
+            主投保人的身分證號
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.birthday">
+            <summary>
+             主投保人的出生日期  YYYYMMDD
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.name">
+            <summary>
+             保險對象姓名
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.insName">
+            <summary>
+            被保險人姓名
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.unitId">
+            <summary>
+             投保單位代號
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.unitName">
+            <summary>
+            投保單位名稱
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.unitAddr">
+            <summary>
+              投保單位地址
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.unitTel">
+            <summary>
+            投保單位電話
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.regAddr">
+            <summary>
+             戶籍地址
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.addr">
+            <summary>
+             通訊地址
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.tel">
+            <summary>
+             通訊電話
+            </summary>
+        </member>
+        <member name="F:ICMCC0001N01.PhgGetAsdata.insId">
+            <summary>
+             被保險人身分證號
+            </summary>
+        </member>
+        <member name="T:ICMCC0001N01.GetAssuredStatus">
+            <summary>
+            查詢投保相關狀態
+            </summary>
+        </member>
+        <member name="M:ICMCC0001N01.GetAssuredStatus.#ctor">
+            <summary>GetAssuredStatus建構子</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.id">
+            <summary>主投保人的身分證號</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.birthday">
+            <summary>主投保人的出生日期</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.name">
+            <summary>保險對象姓名</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.sex">
+            <summary>保險對象性別</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.insType">
+            <summary>insType</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.tel">
+            <summary>通訊電話</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.belongCity">
+            <summary>belongCity</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.addr">
+            <summary>通訊地址</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.status">
+            <summary>status</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.breakYn">
+            <summary>是否中斷</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.oweYn">
+            <summary>是否欠費</summary>
+        </member>
+        <member name="F:ICMCC0001N01.GetAssuredStatus.diedDate">
+            <summary>死亡日期</summary>
+        </member>
+        <member name="T:ICMCC0001N01.ICMM_GetNhiHuLib">
+            <summary>
+            讀取承保相關資料表或StoredProcedure
+            </summary>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetNhiHuLib.ICMM_PhgGetAsdata(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String)">
+            <summary>
+            NHI_HU.ST_GET_ASDATA 讀取保險人相關訊息
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="id">主投保人的身分證號</param>
+            <param name="birthday">主投保人的出生日期  YYYYMMDD</param>
+            <returns></returns>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetNhiHuLib.ICMM_GetAssuredStatus(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,ICMCC0001N01.GetAssuredStatus@)">
+            <summary>
+            NHI_HU.ST_GET_STATUS 取得投保狀態資料
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="id">主投保人的身分證號(明碼)</param>
+            <param name="birthday">主投保人的出生日期(YYYYMMDD)</param>
+            <param name="assured">id, birthday, name, sex, insType, tel, belongCity, addr, status, breakYn, oweYn, diedDate</param>
+            <returns>0:成功(MED_SUCCESS), 1403:未取得投保狀態資料(MED_NO_DATA_FOUND), -20:傳入stored procedure參數錯誤
+            傳入stored procedure參數錯誤
+            是否中斷S, 是否有欠費S, 死亡日期D, 投保單位所屬縣市代碼S, 投保單位所屬鄉鎮代碼S, 聯絡電話S, 聯絡地址S
+            </returns>
+            <remarks>鄉鎮代碼與縣市代碼不再使用(0930423)</remarks>
+        </member>
+        <member name="M:ICMCC0001N01.ICMM_GetNhiHuLib.GetOracleValue(Oracle.ManagedDataAccess.Client.OracleParameter)">
+            <summary>
+            取得Oracle物件數值轉換為string
+            </summary>
+            <param name="val">Oracle參數</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

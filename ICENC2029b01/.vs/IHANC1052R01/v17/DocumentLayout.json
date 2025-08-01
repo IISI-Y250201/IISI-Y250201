@@ -1,0 +1,308 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\services\\interface\\imainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:services\\interface\\imainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\repository\\redisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:repository\\redisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\ihanc1052r01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:ihanc1052r01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NHI_GIT\\NetCoreHM\\etc\\db.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\repository\\interface\\imongorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:repository\\interface\\imongorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\repository\\interface\\iredisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:repository\\interface\\iredisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\repository\\interface\\ioraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:repository\\interface\\ioraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\repository\\mongorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:repository\\mongorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\models\\pxx991.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:models\\pxx991.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|d:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\example\\ihanc1052r01\\exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|IHANC1052R01.csproj|solutionrelative:exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\OpenTelemetrySetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\EnvVariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\Configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\GetDBInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainService.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Services\\MainService.cs",
+              "RelativeDocumentMoniker": "Services\\MainService.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Services\\MainService.cs",
+              "RelativeToolTip": "Services\\MainService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:59:36.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRedisRepository.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\Interface\\IRedisRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\IRedisRepository.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\Interface\\IRedisRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\IRedisRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA+wAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:20:21.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IHANC1052R01.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\IHANC1052R01.cs",
+              "RelativeDocumentMoniker": "IHANC1052R01.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\IHANC1052R01.cs",
+              "RelativeToolTip": "IHANC1052R01.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAzwGUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:17:24.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OpenTelemetrySetup.cs",
+              "DocumentMoniker": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\OpenTelemetrySetup.cs",
+              "ToolTip": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\OpenTelemetrySetup.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T09:43:35.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IOracleRepository.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\Interface\\IOracleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\IOracleRepository.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\Interface\\IOracleRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\IOracleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:20:18.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OracleRepository.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\OracleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OracleRepository.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\OracleRepository.cs",
+              "RelativeToolTip": "Repository\\OracleRepository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwDAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T09:54:22.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IMainService.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Services\\Interface\\IMainService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IMainService.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Services\\Interface\\IMainService.cs",
+              "RelativeToolTip": "Services\\Interface\\IMainService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T08:04:43.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "db.json",
+              "DocumentMoniker": "D:\\NHI_GIT\\NetCoreHM\\etc\\db.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\NHI_GIT\\NetCoreHM\\etc\\db.json",
+              "ToolTip": "D:\\NHI_GIT\\NetCoreHM\\etc\\db.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\NHI_GIT\\NetCoreHM\\etc\\db.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T03:42:29.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IMongoRepository.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\Interface\\IMongoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\IMongoRepository.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\Interface\\IMongoRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\IMongoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:20:12.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EnvVariables.cs",
+              "DocumentMoniker": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\EnvVariables.cs",
+              "ToolTip": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\EnvVariables.cs",
+              "ViewState": "AgIAAEYCAAAAAAAAAAAQwHoCAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:18:50.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-16T07:25:59.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\Configuration.cs",
+              "ToolTip": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:18:49.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetDBInfo.cs",
+              "DocumentMoniker": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\GetDBInfo.cs",
+              "ToolTip": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\GetDBInfo.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIBJwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:23:23.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MongoRepository.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\MongoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\MongoRepository.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\MongoRepository.cs",
+              "RelativeToolTip": "Repository\\MongoRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:20:26.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ENVCC0001N01.csproj",
+              "DocumentMoniker": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj",
+              "ToolTip": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-15T10:20:30.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LOGCC0001N01.csproj",
+              "DocumentMoniker": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj",
+              "ToolTip": "C:\\Users\\HW106136\\Desktop\\NHI3_GIT\\Batch\\HM\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-15T09:40:23.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RedisRepository.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\RedisRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\RedisRepository.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Repository\\RedisRepository.cs",
+              "RelativeToolTip": "Repository\\RedisRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T09:28:33.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomException.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Exceptions\\CustomException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CustomException.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Exceptions\\CustomException.cs",
+              "RelativeToolTip": "Exceptions\\CustomException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:19:27.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PXX991.cs",
+              "DocumentMoniker": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Models\\PXX991.cs",
+              "RelativeDocumentMoniker": "Models\\PXX991.cs",
+              "ToolTip": "D:\\\u4E09\u4EE3\u91AB\u7642\u76F8\u95DC\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\example\\IHANC1052R01\\Models\\PXX991.cs",
+              "RelativeToolTip": "Models\\PXX991.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:19:18.947Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|d:\\robbiewu\\batch\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\qm0\\qm0nc3000\\qm0nc3000b01\\qm0nc3000b01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|solutionrelative:qm0nc3000b01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|d:\\robbiewu\\batch\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\qm0\\qm0nc3000\\qm0nc3000b01\\services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|solutionrelative:services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|d:\\robbiewu\\batch\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\qm0\\qm0nc3000\\qm0nc3000b01\\repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|solutionrelative:repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|d:\\robbiewu\\batch\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\qm0\\qm0nc3000\\qm0nc3000b01\\repository\\interface\\ioraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|solutionrelative:repository\\interface\\ioraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|d:\\robbiewu\\batch\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\qm0\\qm0nc3000\\qm0nc3000b01\\exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|solutionrelative:exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|d:\\robbiewu\\batch\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\qm0\\qm0nc3000\\qm0nc3000b01\\models\\argdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|solutionrelative:models\\argdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|d:\\robbiewu\\batch\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\hm\\qm0\\qm0nc3000\\qm0nc3000b01\\models\\sql100.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|QM0NC3000B01.csproj|solutionrelative:models\\sql100.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 227,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainService.cs",
+              "DocumentMoniker": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Services\\MainService.cs",
+              "RelativeDocumentMoniker": "Services\\MainService.cs",
+              "ToolTip": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Services\\MainService.cs",
+              "RelativeToolTip": "Services\\MainService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAgwGUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T01:20:24.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OracleRepository.cs",
+              "DocumentMoniker": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Repository\\OracleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OracleRepository.cs",
+              "ToolTip": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Repository\\OracleRepository.cs",
+              "RelativeToolTip": "Repository\\OracleRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T01:20:20.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IOracleRepository.cs",
+              "DocumentMoniker": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Repository\\Interface\\IOracleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\IOracleRepository.cs",
+              "ToolTip": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Repository\\Interface\\IOracleRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\IOracleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T01:20:19.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomException.cs",
+              "DocumentMoniker": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Exceptions\\CustomException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CustomException.cs",
+              "ToolTip": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Exceptions\\CustomException.cs",
+              "RelativeToolTip": "Exceptions\\CustomException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T01:20:17.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArgDto.cs",
+              "DocumentMoniker": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Models\\ArgDto.cs",
+              "RelativeDocumentMoniker": "Models\\ArgDto.cs",
+              "ToolTip": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Models\\ArgDto.cs",
+              "RelativeToolTip": "Models\\ArgDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T01:20:14.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SQL100.cs",
+              "DocumentMoniker": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Models\\SQL100.cs",
+              "RelativeDocumentMoniker": "Models\\SQL100.cs",
+              "ToolTip": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\Models\\SQL100.cs",
+              "RelativeToolTip": "Models\\SQL100.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T01:19:29.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QM0NC3000B01.cs",
+              "DocumentMoniker": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\QM0NC3000B01.cs",
+              "RelativeDocumentMoniker": "QM0NC3000B01.cs",
+              "ToolTip": "D:\\RobbieWu\\BATCH\\\u7BC4\u4F8B\u7A0B\u5F0F_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\QM0NC3000B01.cs",
+              "RelativeToolTip": "QM0NC3000B01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T10:48:18.679Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

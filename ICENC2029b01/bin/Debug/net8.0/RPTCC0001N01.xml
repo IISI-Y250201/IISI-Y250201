@@ -1,0 +1,778 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RPTCC0001N01</name>
+    </assembly>
+    <members>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.CurrentRptPath">
+            <summary>
+            報表原始檔案位置
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.NeedWaterMark">
+            <summary>
+            套用浮水印 預設False
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.WatermarkBranchName">
+            <summary>
+            浮水印分區名稱
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.WatermarkNhiUserId">
+            <summary>
+            浮水印使用者系統員工編號
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.WatermakrUserIp">
+            <summary>
+            浮水印使用者IP
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.PaperSize">
+            <summary>
+            紙張大小
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.Oritetion">
+            <summary>
+            紙張方向 L: 橫印, P: 直印
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PdfLIb.PrintCopies">
+            <summary>
+            列印份數
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._fontMingLiu">
+            <summary>
+            細明體字型存放位置
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._fontKaiu">
+            <summary>
+            標楷體字型存放位置
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._nhiWaterMarkPngPath">
+            <summary>
+            浮水印圖檔存放位置
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._pdfPasswd">
+            <summary>
+            PDF預設密碼
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._settingWordSpace">
+            <summary>
+            空白大小
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._settingLineSpacing">
+            <summary>
+            行距
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._settingKerning">
+            <summary>
+            字距
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._settingRowHeight">
+            <summary>
+            行高
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._settingDefaultFontSize">
+            <summary>
+            預設字型大小
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_PdfLIb._rptPath">
+            <summary>
+            報表路徑
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.#ctor(System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            產生PDF
+            </summary>
+            <param name="rptFilePath">報表檔案絕對路徑</param>
+            <param name="rptPaperSize">印表紙張大小預設"B4", 只有A4, B4 可填</param>
+            <param name="rptOritetion">印表紙張方向預設"L"(橫印), P(直印)</param>
+            <param name="needWaterMark">是否需要浮水印預設(false), 若為true 後面相關欄位需要給值</param>
+            <param name="watermarkBranchName">浮水印分區名稱</param>
+            <param name="watermarkNhiUserId">浮水印使用者系統員工編號</param>
+            <param name="watermakrUserIp">浮水印使用者IP</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.RPTM_RemoveReportHeader(System.IO.FileStream@)">
+            <summary>
+            移除112Bytes Header
+            </summary>
+            <param name="fs">傳入之FileStream物件,若為null會有Exception</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.ConvertToPdf(System.String)">
+            <summary>
+            轉換健保數專用Txt為PDF
+            </summary>
+            <param name="textPath">檔案路徑</param>
+            <returns>
+            成功: 回傳PDF的絕對路徑
+            錯誤訊息: 錯誤說明
+            </returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.GetDefaultSetting(System.Int32,System.Int32)">
+            <summary>
+            GetDefaultSetting 找尋最佳字型大小
+            </summary>
+            <param name="maxLineBytes">傳入每行最大bytes</param>
+            <param name="maxPageCount">傳入每頁最大行數</param>
+            <returns>最適合之FontSize</returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.Get_CtrlCode_Setting(System.Int32,System.Int32)">
+            <summary>
+            Get_CtrlCode_Setting 找尋最佳字型大小
+            </summary>
+            <param name="MaxLineBytes">傳入每行最大bytes</param>
+            <param name="MaxPageCount">傳入每頁最大行數</param>
+            <returns>最適合之FontSize</returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.GetMaxiumKerning(System.Int32)">
+            <summary>
+            計算字距
+            </summary>
+            <param name="inCHrs"></param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.GetMaxiumRowHeight(System.Int32)">
+            <summary>
+            計算行距
+            </summary>
+            <param name="PageLineCount">最大每頁行數</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.GetDefaultSettings(System.String,System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Single}@)">
+            <summary>
+            getDefaultSetting依照紙張大小調整初始比率
+            </summary>
+            <param name="PaperSize"></param>
+            <param name="Orient"></param>
+            <param name="LineSize"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.removeDoubleReturn(System.String)">
+            <summary>
+            移除連續兩個換行成一個
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.AddCopies(System.String,System.Int32)">
+            <summary>
+            增加列印份數
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.ApplyWatermark(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            ApplyWatermark增加浮水印
+            </summary>
+            <param name="fileName"></param>
+            <param name="waterMarkPath"></param>
+            <param name="branchName"></param>
+            <param name="usrId"></param>
+            <param name="usrIpAddress"></param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PdfLIb.GetDisplayWidth(System.String)">
+            <summary>
+            計算字串長度
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.Orient">
+            <summary>
+            Orient 列印方向[P:直印 L:橫印]
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.PaperSize">
+            <summary>
+            PaperSize紙張大小[A4, B4, A3]
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.rtnHasNhiRptCtrlCode">
+            <summary>
+            rtnHasNhiRptCtrlCode是否有健保署的印表機控制碼
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.rtnHasNhi112HeadCtrl">
+            <summary>
+            rtnHasNhi112HeadCtrl是否有健保署的印表機112 Bytes表頭
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.GMC_FormName">
+            <summary>
+            GMC_FormName-GMC套表檔名稱
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.MaxLineLength_big5">
+            <summary>
+            MaxLineLength-檔案內最長的行的字元字數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.MaxLineLength_utf8">
+            <summary>
+            MaxLineLengthByte-檔案內最長的行的Bytes數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.DefaultWordSpacing">
+            <summary>
+            DefaultWordSpacing-健保署印表機控制碼 預設的字距設定
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.DefaultRowSpacing">
+            <summary>
+            DefaultRowSpacing-健保署印表機控制碼 預設的行距設定
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.DefaultFontSize">
+            <summary>
+            DefaultFontSize-健保署印表機控制碼 預設的字體大小設定
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.DefaultSettingMaxLengthBig5Bytes">
+            <summary>
+            DefaultSettingMaxLengthBig5Bytes-在參數預設值情況下最長行數Bytes(Big5)
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.DefaultSettingMaxLengthUTF8Bytes">
+            <summary>
+            DefaultSettingMaxLengthUTF8Bytes-在參數預設值情況下最長行數Bytes(UTF8)
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.WithRptCtrlSettingMaxBig5Length">
+            <summary>
+            WithRptCtrlSettingMaxBig5Length-有印表機控制碼情況下最長行數Bytes(Big5)
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.WithRptCtrlSettingMaxLengthUTF8Bytes">
+            <summary>
+            WithRptCtrlSettingMaxBig5Length-有印表機控制碼情況下最長行數Bytes(UTF8)
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.MaxPageLineCount">
+            <summary>
+            報表每頁最大行數
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.DocumentDefaultAdjustRatioBig5(System.String,System.String)">
+            <summary>
+            在有印表機控制碼情況下的縮放比例(以Big5計算), 1 代表沒調整
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.WithCtrlCodeAdjustRatioBig5">
+            <summary>
+            在有印表機控制碼情況下的縮放比例(以Big5計算), 1 代表沒調整
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_RptParm.WithCtrlCodeAdjustRatioUTF8">
+            <summary>
+            在有印表機控制碼情況下的縮放比例(以UTF8計算), 1 代表沒調整
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.chkRptFile(System.String,System.String@)">
+            <summary>
+            chkRptFile 檢查檔案
+            </summary> 
+            <param name="FileName">輸入與檢查的檔案名稱</param>
+            <param name="RtnMsg">回傳訊息</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.chkNhiRptCtrlCode(System.String,System.String@)">
+            <summary>
+            chkNhiRptCtrlCode 回傳是否有印表機字元控制碼
+            </summary> 
+            <param name="FileName">輸入與檢查的檔案名稱</param>
+            <param name="RtnMsg">回傳訊息</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.adjLineParmWithCtrlCode(System.String,System.Single@,System.Single@,System.Single@,System.Boolean@)">
+            <summary>
+            將報表的字串傳入檢核是否有印表機控制碼以及回傳相關比率
+            </summary>
+            <param name="DataLine">傳入的資料行</param>
+            <param name="WordSpacingRatio">字距調整比例, 當true時需要使用此參數</param>
+            <param name="RowSpacingRatio">行距調整比例, 當true時需要使用此參數</param>
+            <param name="FontSizeRatio">字型大小調整比例, 當true時需要使用此參數</param>
+            <returns>true: 代表有印表機控制碼, false無印表機控制碼 </returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.SettingMaxLength(System.String)">
+            <summary>
+            SettingMaxLength計算最大行數長度
+            </summary>
+            <param name="line"></param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.RowSpacing(System.String,System.Single@)">
+            <summary>
+            RowSpacing 計算行距
+            </summary>
+            <param name="ctrlCode">控制碼</param>
+            <param name="rtnAdjRowSpacingRatio">回傳行距比例</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.RemoveCtrlCode(System.String,System.Boolean@,System.Boolean@)">
+            <summary>
+            刪除傳入行內有控制碼資料者
+            </summary>
+            <param name="line">輸入之字串</param>
+            <param name="isInitialize">是否還原回初始值</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.WordSpacing(System.String,System.Single@)">
+            <summary>
+            WordSpacing 計算字距
+            </summary>
+            <param name="ctrlCode">控制碼</param>
+            <param name="rtnAdjWordSpacingRatio">回傳字距比例</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.AdjustFontSize(System.String,System.Single@)">
+            <summary>
+            FontSize 計算字型大小
+            </summary>
+            <param name="ctrlCode">控制碼</param>
+            <param name="rtnAdjFontSizeRatio">回傳字型大小比例</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.leftMargin(System.Int32)">
+            <summary>
+            leftMargin 計算左邊界
+            </summary>
+            <param name="CharacterPerLine">每行做多Bytes數以UTF8計算</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.chkIsAllDefaultSetting">
+            <summary>
+            chkIsAllDefaultSetting 檢查是否都回到預設值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.PDF_limit(System.String,System.String,System.Single,System.Collections.Generic.Dictionary{System.String,System.Single}@)">
+            <summary>
+            PDF_limit 實際的PDF測試結果 result["PAGE_LINES"]: 每頁最大頁數, result["LINE_BYTES"] 每行最大Bytes
+            </summary>
+            <param name="PaperSize">傳入的紙張大小A3, A4, B4</param>
+            <param name="Oritetion">紙張方向 L:橫印 P:直印</param>
+            <param name="FontSize">字體大小</param>
+            <param name="result">result["PAGE_LINES"]: 每頁最大頁數, result["LINE_BYTES"] 每行最大Bytes</param>
+            <returns>true:有對應到值, false:沒有對應到值</returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_RptParm.MaxLineCharacters(System.Int32,System.String,System.String)">
+            <summary>
+            回傳紙張最大行數及每行字數
+            </summary>
+            <param name="fontSize">字型大小</param>
+            <param name="PaperSize">紙張大小 A4, B4, A3</param>
+            <param name="Oritetion">H-橫印, V-直印</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_OpenReport(System.IO.FileStream@,System.String,System.String)">
+            <summary>
+            開啟檔案
+            </summary>
+            <param name="fs">FileStream</param>
+            <param name="reportName">報表名稱(完整路徑)</param>
+            <param name="type">報表檔是否已存在('O' or 'o' 表示報表檔已存在, 使用 Append 方式寫入)</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_OpenReport(System.IO.FileStream@,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            開啟檔案
+            </summary>
+            <param name="fs">傳入之FileStream物件,若為null會有Exception</param>
+            <param name="reportName">報表名稱</param>
+            <param name="branchCode">分區別</param>
+            <param name="subSys">子系統別</param>
+            <param name="selfDefinePath">自訂義子目錄預設為"rpt"</param>
+            <param name="type">報表檔是否已存在('O' or 'o' 表示報表檔已存在, 使用 Append 方式寫入)</param>
+            <remarks>檔案路徑為{MED2_HOME}\shared_dir\subSys\branchCode\selfDefinePath</remarks>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_SetBom(System.IO.FileStream@,System.Text.Encoding)">
+            <summary>
+            根據傳入的文字編碼在檔案起始位置
+            </summary>
+            <param name="fs">傳入之FileStream物件,若為null會有Exception</param>
+            <param name="encoding">沒有傳入預設為UTF-8編碼</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_SetReportHeader(System.IO.FileStream@,System.String,System.Int32)">
+            <summary>
+            設定報表 112 Bytes 表頭資訊 一般文字報表用
+            </summary>
+            <param name="fs">傳入之FileStream物件,若為null會有Exception</param>
+            <param name="Orient">[列印方向]：預設為'L'：'P'為直印，'L'為橫印。</param>
+            <param name="Copies">[份數]：至少填寫1份</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_SetReportHeader(System.IO.FileStream@,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            設定報表 112 Bytes 表頭資訊 GMC 用
+            </summary>
+            <param name="fs">傳入之FileStream物件,若為null會有Exception</param>
+            <param name="recLen">[記錄長度(GMC用)]：每一筆 Record 所佔的 bytes 數，每一頁視為一筆 Record。</param>
+            <param name="pages">[頁數]：代表總共有多少頁次。無須填寫時請填 0。</param>
+            <param name="orient">[列印方向]：預設為'L'：'P'為直印，'L'為橫印。</param>
+            <param name="pageHeight">[每頁高度已無使用]：Y軸方向的寬度，跳頁即根據本項高度值，以多少英吋表示。</param>
+            <param name="copies">[份數]：至少填寫1份</param>
+            <param name="webPage">[預覽(廢止)]：列印時是否產生 Preview 檔，Y 或 N，如果填「Y」表示要產生Preview 檔，且該檔的內容只有一頁，而且是第一頁！</param>
+            <param name="formName">[套表名稱(GMC用)]：透過 GMC表格時才填，GMC的表格名稱。無須填寫時請填空字串。</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_RemoveReportHeader(System.IO.FileStream@)">
+            <summary>
+            移除112Bytes Header
+            </summary>
+            <param name="fs">傳入之FileStream物件,若為null會有Exception</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:RPTCC0001N01.RPTM_PrinterLib.RPTM_WriteLineReport(System.IO.FileStream@,System.String,System.Text.Encoding)" -->
+        <!-- Badly formed XML comment ignored for member "M:RPTCC0001N01.RPTM_PrinterLib.RPTM_WriteReport(System.IO.FileStream@,System.String,System.Text.Encoding)" -->
+        <!-- Badly formed XML comment ignored for member "M:RPTCC0001N01.RPTM_PrinterLib.RPTM_WriteReport(System.IO.FileStream@,System.Collections.Generic.List{System.String},System.Text.Encoding)" -->
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_CloseReport(System.IO.FileStream@)">
+            <summary>
+            連接多個數組
+            </summary>
+            <param name="fs">傳入之FileStream物件,若為null會有Exception</param>
+            <remarks>FileStream將被清除為NULL</remarks>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_PrintReport(System.String,System.String,System.String)">
+            <summary>
+            複製報表從 shared_dir/branchCode 至 printing/branchCode/immediate/printerName
+            </summary>
+            <param name="reportPath">報表的絕對路徑</param>
+            <param name="branchCode">需求此報表的分局 (印出此報表的分區別)</param>
+            <param name="printerName">印表機代號</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_CommInsert(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            插入文字, 中文字算兩個字元, 其他算一個字元 例如: "中文ABC" = 2*1 + 3*1 共5個字元
+            </summary>
+            <param name="oriStr">原始字串</param>
+            <param name="insStr">欲插入的文字</param>
+            <param name="insertPosition">插入字串位置</param>
+            <param name="alignLeft">true: 從左往右起算insertPosition開始插入insSrc, false:從右往左C起算insertPosition開始插入insSrc</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_CommInsertAlignRight(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            插入文字, 右邊對齊用
+            </summary>
+            <param name="oriStr">原始字串</param>
+            <param name="insSrc">欲插入的文字</param>
+            <param name="insertPosition">插入字串位置</param>
+            <param name="alignLeft">true: 從左往右起算insertPosition開始插入insSrc, false:從右往左C起算insertPosition開始插入insSrc</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_AddSpaceAfterU8ChnWord(System.String)">
+            <summary>
+            UTF8中文字字串補空白
+            </summary>
+            <param name="rptText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.Concatenate``1(``0[],``0[])">
+            <summary>
+            陣列串接
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="f1"></param>
+            <param name="f2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_GetPrinterInfo(Oracle.ManagedDataAccess.Client.OracleConnection@,System.String,System.String,System.String@,System.Int32@)">
+            <summary>
+            取得印表機橫直印以及紙張高度訊息
+            </summary>
+            <param name="OraConn">OracleConnection可為null</param>
+            <param name="printerName">印表機名稱</param>
+            <param name="branchCode">分區別</param>
+            <param name="orient">橫直印</param>
+            <param name="pageHieght">紙張高度</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_Utf8Sprintf(System.String@,System.String,System.Object[])">
+            <summary>
+            RPTM_Utf8Sprintf 仿 Sprintf
+            </summary>
+            <param name="resultStr">結果字串</param>
+            <param name="format">字串格式</param>
+            <param name="args">參數</param>
+        </member>
+        <member name="T:RPTCC0001N01.RPTM_PrinterLib.ReportNMF">
+            <summary>
+            NMF產生報表名稱使用
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportNMF.branchCode">
+            <summary>
+            分區別
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportNMF.printerId">
+            <summary>
+            印表機代號
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportNMF.userId">
+            <summary>
+            經辦代號
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportNMF.progName">
+            <summary>
+            程式代號
+            </summary>
+        </member>
+        <member name="T:RPTCC0001N01.RPTM_PrinterLib.ReportMFNS">
+            <summary>
+            MFNS產生報表名稱使用
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFNS.hospDataType">
+            <summary>
+            醫事類別
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFNS.deptType">
+            <summary>
+            課別
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFNS.userId">
+            <summary>
+            經辦代號
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFNS.progName">
+            <summary>
+            程式代號
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.ReportMFNS.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:RPTCC0001N01.RPTM_PrinterLib.ReportMFS">
+            <summary>
+            MFS產生報表名稱使用
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.hospDataType">
+            <summary>
+            醫事類別
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.deptType">
+            <summary>
+            課別
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.userId">
+            <summary>
+            經辦代號
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.hospId">
+            <summary>
+            院所代號
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.feeYm">
+            <summary>
+            費用年月
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.applType">
+            <summary>
+            申報類別
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.applDate">
+            <summary>
+            申報日期
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.progName">
+            <summary>
+            程式代號
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.ReportMFS.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_GetReportNameMFS(System.Boolean,RPTCC0001N01.RPTM_PrinterLib.ReportMFS)">
+            <summary>
+            MFS 產生報表名稱
+            </summary>
+            <param name="isGMC"> true: GMC </param>
+            <param name="reportMFS">報表參數</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_GetReportNameMFNS(System.Boolean,RPTCC0001N01.RPTM_PrinterLib.ReportMFNS,System.String[])">
+            <summary>
+            MFNS 產生報表名稱
+            </summary>
+            <param name="isGMC"> true: GMC </param>
+            <param name="reportMFNS">報表參數</param>
+            <param name="args">程式參數</param>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_PrinterLib.RPTM_GetReportNameNMF(System.Boolean,RPTCC0001N01.RPTM_PrinterLib.ReportNMF,System.String[])">
+            <summary>
+            NMF 產生報表名稱
+            </summary>
+            <param name="isGMC"> true: GMC </param>
+            <param name="reportNMF">報表參數</param>
+            <param name="args">程式參數</param>
+            <returns></returns>
+        </member>
+        <member name="T:RPTCC0001N01.ReportParms">
+            <summary>
+            NMF產生報表名稱使用
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.RowsPerHeader">
+            <summary>
+            表頭所佔列數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.RowsPerFooter">
+            <summary>
+            表尾所佔列數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.LastRowsPerFooter">
+            <summary>
+            最後一頁的表尾所佔列數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.RowsPerPage">
+            <summary>
+            每頁有幾列
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.RowsPerRecord">
+            <summary>
+            單筆資料所佔的列數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.BytesPerRow">
+            <summary>
+            每列所佔的Bytes數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.TotalRecords">
+            <summary>
+            列印總筆數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.ReportParms.CurrentPrtPos">
+            <summary>
+            現在列印位置
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.ReportParms.TotalPages">
+            <summary>
+            總頁數
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.ReportParms.PageFeedBoundary">
+            <summary>
+            換頁邊界
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.ReportParms.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            報表列印參數
+            </summary>
+            <param name="rowsPerHeader">表頭所佔列數</param>
+            <param name="rowsPerFooter">表尾所佔列數</param>
+            <param name="rowsPerPage">每頁有幾列</param>
+            <param name="bytesPerRow">每列所佔的Bytes數</param>
+            <param name="lastRowsPerFooter">最後一頁的表尾所佔列數</param>
+        </member>
+        <member name="T:RPTCC0001N01.RPTM_ReportUtilLib">
+            <summary>
+            報表計算
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_ReportUtilLib.SeparatedSymbol">
+            <summary>
+            分隔符號
+            </summary>
+        </member>
+        <member name="F:RPTCC0001N01.RPTM_ReportUtilLib.BytesPerLine">
+            <summary>
+            每行資料ytes上限
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_ReportUtilLib.ColumnsPerPage">
+            <summary>
+            每頁最大筆數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_ReportUtilLib.BytesPerRecord">
+            <summary>
+            每筆紀錄最大bytes數
+            </summary>
+        </member>
+        <member name="P:RPTCC0001N01.RPTM_ReportUtilLib.CurrentPrintData">
+            <summary>
+            列印資料暫存
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_ReportUtilLib.PageFeed">
+            <summary>
+            換頁
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_ReportUtilLib.WriteNewLine">
+            <summary>
+            新增段行號
+            </summary>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_ReportUtilLib.WriteReportWithoutSeperator(System.String)">
+            <summary>
+            寫入資料(不帶入任何分隔符號)
+            </summary>
+            <param name="rptData">輸入列印資料</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_ReportUtilLib.WriteReport(System.String)">
+            <summary>
+            寫入資料
+            </summary>
+            <param name="rptData">輸入列印資料</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_ReportUtilLib.GetPrintDataWithoutSeperator">
+            <summary>
+            取回目前列印資料(去除CSV), 會將分隔符號改為換行號
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_ReportUtilLib.GetPrintData">
+            <summary>
+            取得列印資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_ReportUtilLib.#ctor(System.String)">
+            <summary>
+            輸入分隔符號
+            </summary>
+            <param name="seperator">輸入分隔符號</param>
+        </member>
+        <member name="M:RPTCC0001N01.RPTM_Utils.PathManipulation(System.String)">
+            <summary>
+            Path Manipulation 路徑暴露或跳脫路
+            </summary>
+            <param name="inputStr">輸入字串</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

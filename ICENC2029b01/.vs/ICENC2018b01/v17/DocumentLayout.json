@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\0_PROC_C\\READY\\ICENC2018b01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|d:\\0_proc_c\\ready\\icenc2018b01\\services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|solutionrelative:services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\0_PROC_C\\icei2018b01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|d:\\0_proc_c\\ready\\icenc2018b01\\repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|solutionrelative:repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|d:\\0_proc_c\\ready\\icenc2018b01\\models\\argdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|solutionrelative:models\\argdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|d:\\0_proc_c\\ready\\icenc2018b01\\models\\sql200.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|solutionrelative:models\\sql200.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|d:\\0_proc_c\\ready\\icenc2018b01\\exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|solutionrelative:exceptions\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|d:\\0_proc_c\\ready\\icenc2018b01\\repository\\interface\\ioraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC2018b01.csproj|solutionrelative:repository\\interface\\ioraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "icei2018b01.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\icei2018b01.cs",
+              "RelativeDocumentMoniker": "..\\..\\icei2018b01.cs",
+              "ToolTip": "D:\\0_PROC_C\\icei2018b01.cs",
+              "RelativeToolTip": "..\\..\\icei2018b01.cs",
+              "ViewState": "AgIAADkCAAAAAAAAAAAjwFACAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:30:43.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOracleRepository.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Repository\\Interface\\IOracleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\IOracleRepository.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Repository\\Interface\\IOracleRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\IOracleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:35:43.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SQL200.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Models\\SQL200.cs",
+              "RelativeDocumentMoniker": "Models\\SQL200.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Models\\SQL200.cs",
+              "RelativeToolTip": "Models\\SQL200.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:35:40.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomException.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Exceptions\\CustomException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CustomException.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Exceptions\\CustomException.cs",
+              "RelativeToolTip": "Exceptions\\CustomException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:27:11.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArgDto.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Models\\ArgDto.cs",
+              "RelativeDocumentMoniker": "Models\\ArgDto.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Models\\ArgDto.cs",
+              "RelativeToolTip": "Models\\ArgDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:22:43.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OracleRepository.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Repository\\OracleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OracleRepository.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Repository\\OracleRepository.cs",
+              "RelativeToolTip": "Repository\\OracleRepository.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAjwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:21:00.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainService.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Services\\MainService.cs",
+              "RelativeDocumentMoniker": "Services\\MainService.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC2018b01\\Services\\MainService.cs",
+              "RelativeToolTip": "Services\\MainService.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAhwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T07:20:58.971Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

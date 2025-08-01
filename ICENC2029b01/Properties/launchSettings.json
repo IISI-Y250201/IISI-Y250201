@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "ICENC4016b01": {
+      "commandName": "Project",
+      "commandLineArgs": "20250101",
+      "environmentVariables": {
+        "MED2_HOME": "D:\\NHI_GIT\\NetCoreHMTest",
+        "BRANCH_CODE": "1"
+      }
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

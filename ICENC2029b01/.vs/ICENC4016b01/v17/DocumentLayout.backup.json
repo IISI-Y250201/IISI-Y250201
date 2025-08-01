@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\0_PROC_C\\READY\\ICENC4016b01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|d:\\0_proc_c\\ready\\icenc4016b01\\repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|solutionrelative:repository\\oraclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|d:\\0_proc_c\\ready\\icenc4016b01\\services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|solutionrelative:services\\mainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|d:\\0_proc_c\\ready\\icenc4016b01\\icenc4016b01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|solutionrelative:icenc4016b01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|d:\\0_proc_c\\ready\\icenc4016b01\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D05BFF2B-FD96-4116-A02D-85081FCE7A37}|ICENC4016b01.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OracleRepository.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC4016b01\\Repository\\OracleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OracleRepository.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC4016b01\\Repository\\OracleRepository.cs",
+              "RelativeToolTip": "Repository\\OracleRepository.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwEsAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T06:30:45.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC4016b01\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC4016b01\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-01T06:37:40.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainService.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC4016b01\\Services\\MainService.cs",
+              "RelativeDocumentMoniker": "Services\\MainService.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC4016b01\\Services\\MainService.cs",
+              "RelativeToolTip": "Services\\MainService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAhwDkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T05:33:35.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICENC4016b01.cs",
+              "DocumentMoniker": "D:\\0_PROC_C\\READY\\ICENC4016b01\\ICENC4016b01.cs",
+              "RelativeDocumentMoniker": "ICENC4016b01.cs",
+              "ToolTip": "D:\\0_PROC_C\\READY\\ICENC4016b01\\ICENC4016b01.cs",
+              "RelativeToolTip": "ICENC4016b01.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAADwv1MAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T03:22:33.126Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

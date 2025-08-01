@@ -1,0 +1,667 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\QM0NC3000B01.csproj": {}
+  },
+  "projects": {
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj",
+        "projectName": "ENVCC0001N01",
+        "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj",
+        "packagesPath": "C:\\Users\\HW106132\\.nuget\\packages\\",
+        "outputPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\NuGet.Config",
+          "C:\\Users\\HW106132\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.177:5555/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "OpenTelemetry": {
+              "target": "Package",
+              "version": "[1.11.2, )"
+            },
+            "OpenTelemetry.Exporter.Console": {
+              "target": "Package",
+              "version": "[1.11.2, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.11.2, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.11.2, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ERRCC0001N01\\ERRCC0001N01.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ERRCC0001N01\\ERRCC0001N01.csproj",
+        "projectName": "ERRCC0001N01",
+        "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ERRCC0001N01\\ERRCC0001N01.csproj",
+        "packagesPath": "C:\\Users\\HW106132\\.nuget\\packages\\",
+        "outputPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ERRCC0001N01\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\NuGet.Config",
+          "C:\\Users\\HW106132\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.177:5555/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.7.15, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[23.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0001N01\\ICMCC0001N01.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0001N01\\ICMCC0001N01.csproj",
+        "projectName": "ICMCC0001N01",
+        "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0001N01\\ICMCC0001N01.csproj",
+        "packagesPath": "C:\\Users\\HW106132\\.nuget\\packages\\",
+        "outputPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0001N01\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\NuGet.Config",
+          "C:\\Users\\HW106132\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.177:5555/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.50, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.111, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0002N01\\ICMCC0002N01.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0002N01\\ICMCC0002N01.csproj",
+        "projectName": "ICMCC0002N01",
+        "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0002N01\\ICMCC0002N01.csproj",
+        "packagesPath": "C:\\Users\\HW106132\\.nuget\\packages\\",
+        "outputPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0002N01\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\NuGet.Config",
+          "C:\\Users\\HW106132\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.177:5555/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.50, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj",
+        "projectName": "LOGCC0001N01",
+        "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj",
+        "packagesPath": "C:\\Users\\HW106132\\.nuget\\packages\\",
+        "outputPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\LOGCC0001N01\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\NuGet.Config",
+          "C:\\Users\\HW106132\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.177:5555/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ERRCC0001N01\\ERRCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ERRCC0001N01\\ERRCC0001N01.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.7.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\MEDCC0001N01\\MEDCC0001N01.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\MEDCC0001N01\\MEDCC0001N01.csproj",
+        "projectName": "MEDCC0001N01",
+        "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\MEDCC0001N01\\MEDCC0001N01.csproj",
+        "packagesPath": "C:\\Users\\HW106132\\.nuget\\packages\\",
+        "outputPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\MEDCC0001N01\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\NuGet.Config",
+          "C:\\Users\\HW106132\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.177:5555/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj"
+              },
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0002N01\\ICMCC0002N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0002N01\\ICMCC0002N01.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.50, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "SSH.NET": {
+              "target": "Package",
+              "version": "[2020.0.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.111, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\QM0NC3000B01.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\QM0NC3000B01.csproj",
+        "projectName": "QM0NC3000B01",
+        "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\QM0NC3000B01.csproj",
+        "packagesPath": "C:\\Users\\HW106132\\.nuget\\packages\\",
+        "outputPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\QM0NC3000\\QM0NC3000B01\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\NuGet.Config",
+          "C:\\Users\\HW106132\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.147:8081/repository/iisi-nhi3-nuget/": {},
+          "http://192.168.84.177:5555/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ENVCC0001N01\\ENVCC0001N01.csproj"
+              },
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0001N01\\ICMCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\ICMCC0001N01\\ICMCC0001N01.csproj"
+              },
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\LOGCC0001N01\\LOGCC0001N01.csproj"
+              },
+              "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\MEDCC0001N01\\MEDCC0001N01.csproj": {
+                "projectPath": "D:\\RobbieWu\\BATCH\\範例程式_20250527\\HM\\qm0\\libsource\\MEDCC0001N01\\MEDCC0001N01.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[23.8.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.31, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

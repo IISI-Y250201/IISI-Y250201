@@ -1,0 +1,14 @@
+﻿{
+  "ConnectionStrings": {
+    "mongo": "mongodb://admin:admin@192.168.84.150/",
+    "oracle": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.67.14)(PORT = 1521))) (CONNECT_DATA = (SID = NHIHMT)));Min Pool Size=10;Max Pool Size=100;Connection Timeout=30;Incr Pool Size=5;Decr Pool Size=2;User ID=nhi_hm;Password=nhi_hm",
+    "hm_rap": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.67.14)(PORT = 1521))) (CONNECT_DATA = (SID = NHIHMT)));Connection Timeout=30;Pooling=false;User ID=nhi_hm;Password=nhi_hm",
+    "hm": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.67.14)(PORT = 1521))) (CONNECT_DATA = (SID = NHIHMT)));Min Pool Size=10;Max Pool Size=100;Connection Timeout=30;Incr Pool Size=5;Decr Pool Size=2;User ID=nhi_hm;Password=nhi_hm",
+    "ie1": "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.67.14)(PORT = 1521))) (CONNECT_DATA = (SID = NHIHMT)));Min Pool Size=10;Max Pool Size=100;Connection Timeout=30;Incr Pool Size=5;Decr Pool Size=2;User ID=nhi_idc;Password=nhi_idc",
+    "mssql": "Data Source=192.168.74.45,1433;Initial Catalog=DWDB;User ID=dwmed;Password=dwmed@Dw4;Connect Timeout=300",
+    "mspack": "Data Source=192.168.74.45,1433;Initial Catalog=DWDB;User ID=dwmed;Password=dwmed@Dw4;Connect Timeout=300;Packet Size=20480",
+    "hc_db": "User Id=nhi_hc;Password=nhi_hc;Data Source=192.168.67.68:1521/IET2;Pooling=true;Min Pool Size=1;Max Pool Size=100;Connection Lifetime=3600;Decr Pool Size=5;Incr Pool Size=3;Connection Timeout=600",
+    "idc_db": "User Id=nhi_idc;Password=nhi_idc;Data Source=192.168.67.68:1521/IET2;Pooling=true;Min Pool Size=1;Max Pool Size=100;Connection Lifetime=3600;Decr Pool Size=5;Incr Pool Size=3;Connection Timeout=600",
+    "redis": "192.168.84.74"
+  }
+}
